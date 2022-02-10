@@ -110,12 +110,18 @@
         placeholder="Din e-postadress"
       />
       <br />
-      <label>Matallergier: </label>
+      <!-- <label>Matallergier: </label>
       <ul>
         <li><input type="checkbox" />Citrus</li>
         <li><input type="checkbox" />Mjölkprotein</li>
         <li><input type="checkbox" />Nötter</li>
-      </ul>
+      </ul> -->
+      <label for="allergies">`Matallergier: </label>
+      <select name="allergies" id="allergies" multiple>
+        <option value="citrus">Citrus</option>
+        <option value="mjolkprotein">Mjölkprotein</option>
+        <option value="notter">Nötter</option>
+      </select>
       <label for="vip">VIP-paket</label>
       <input type="checkbox" name="vip" id="vip" />
       <br />
